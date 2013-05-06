@@ -4,14 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>ru.yandex.qatools.htmlelements</groupId>
-        <artifactId>htmlelements</artifactId>
-        <version>1.10</version>
-    </parent>
-
-    <artifactId>htmlelements-archetypes</artifactId>
+    <groupId>ru.yandex.qatools.examples</groupId>
+    <artifactId>htmlelements-examples</artifactId>
+    <version>1.10-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <name>Yandex QATools HtmlElements Examples</name>
 
     <licenses>
         <license>
@@ -26,6 +24,9 @@
         <connection>scm:git:git@github.com:yandex-qatools/htmlelements-archetypes.git</connection>
         <developerConnection>scm:git:git@github.com:yandex-qatools/htmlelements-archetypes.git</developerConnection>
     </scm>
+    <modules>
+        <module>htmlelements-thucydides-example</module>
+    </modules>
 
     <issueManagement>
         <system>GitHub Issue Tracker</system>
