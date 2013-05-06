@@ -4,6 +4,7 @@ import my.company.web.elements.SearchArrow;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import ru.yandex.qatools.htmlelements.thucydides.BlockPageObject;
 
 /**
  * @author Artem Eroshenko eroshenkoam

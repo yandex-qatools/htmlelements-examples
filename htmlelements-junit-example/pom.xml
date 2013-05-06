@@ -3,31 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>ru.yandex.qatools.examples</groupId>
         <artifactId>htmlelements-examples</artifactId>
+        <groupId>ru.yandex.qatools.examples</groupId>
         <version>1.10-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>htmlelements-thucydides-example</artifactId>
-    <name>Yandex QATools HtmlElements Example using Thucydides</name>
-    <packaging>jar</packaging>
+    <artifactId>htmlelements-junit-example</artifactId>
 
     <properties>
-        <thucydides.version>0.9.122</thucydides.version>
         <htmlelements.version>1.11-SNAPSHOT</htmlelements.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>net.thucydides</groupId>
-            <artifactId>thucydides-junit</artifactId>
-            <version>${thucydides.version}</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.31.0</version>
         </dependency>
         <dependency>
-            <groupId>net.thucydides</groupId>
-            <artifactId>thucydides-core</artifactId>
-            <version>${thucydides.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
         </dependency>
         <dependency>
             <groupId>ru.yandex.qatools.htmlelements</groupId>
