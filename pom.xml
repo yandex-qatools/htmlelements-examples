@@ -20,9 +20,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/yandex-qatools/htmlelements-archetypes</url>
-        <connection>scm:git:git@github.com:yandex-qatools/htmlelements-archetypes.git</connection>
-        <developerConnection>scm:git:git@github.com:yandex-qatools/htmlelements-archetypes.git</developerConnection>
+        <url>https://github.com/yandex-qatools/htmlelements-examples</url>
+        <connection>scm:git:git@github.com:yandex-qatools/htmlelements-examples.git</connection>
+        <developerConnection>scm:git:git@github.com:yandex-qatools/htmlelements-examples.git</developerConnection>
     </scm>
     <modules>
         <module>htmlelements-thucydides-example</module>
@@ -30,7 +30,7 @@
 
     <issueManagement>
         <system>GitHub Issue Tracker</system>
-        <url>https://github.com/yandex-qatools/htmlelements-archetypes/issues</url>
+        <url>https://github.com/yandex-qatools/htmlelements-examples/issues</url>
     </issueManagement>
 
 
