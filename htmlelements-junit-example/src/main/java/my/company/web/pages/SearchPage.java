@@ -13,15 +13,12 @@ import ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementDecorator;
  */
 public class SearchPage {
 
-    @SuppressWarnings("unused")
     private WebDriver driver;
 
     @FindBy(className = "b-serp-list")
-    @SuppressWarnings("unused")
     private SearchResults searchResults;
 
     @FindBy(className = "b-morda-search-form")
-    @SuppressWarnings("unused")
     private SearchArrow searchArrow;
 
     public SearchPage(WebDriver driver) {
@@ -29,8 +26,9 @@ public class SearchPage {
         this.driver = driver;
     }
 
-    public void searchFor(String request) {
+    public SearchPage searchFor(String request) {
         this.searchArrow.searchFor(request);
+        return this;
     }
 
     public SearchResults getSearchResults() {
