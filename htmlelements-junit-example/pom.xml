@@ -5,7 +5,7 @@
     <parent>
         <artifactId>htmlelements-examples</artifactId>
         <groupId>ru.yandex.qatools.examples</groupId>
-        <version>1.10-SNAPSHOT</version>
+        <version>1.11-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <htmlelements.version>1.11-SNAPSHOT</htmlelements.version>
+        <htmlelements.version>1.11</htmlelements.version>
     </properties>
 
     <dependencies>

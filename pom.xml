@@ -6,7 +6,7 @@
 
     <groupId>ru.yandex.qatools.examples</groupId>
     <artifactId>htmlelements-examples</artifactId>
-    <version>1.10-SNAPSHOT</version>
+    <version>1.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Yandex QATools HtmlElements Examples</name>
