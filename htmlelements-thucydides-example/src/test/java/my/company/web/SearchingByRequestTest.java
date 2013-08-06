@@ -26,7 +26,7 @@ public class SearchingByRequestTest {
 
     private final int DEFAULT_RESULTS_COUNT;
 
-    @Managed
+    @Managed(driver = "remote")
     @SuppressWarnings("unused")
     public WebDriver driver;
 

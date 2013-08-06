@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.assertThat;
@@ -20,7 +22,9 @@ public class SearchingByRequestTest {
 
     private final int DEFAULT_RESULTS_COUNT;
 
-    public WebDriver driver = new FirefoxDriver();
+    private WebDriverProperties webDriverProperties = new WebDriverProperties();
+
+    public WebDriver driver = new RemoteWebDriver(webDriverProperties.getServer(), DesiredCapabilities.firefox());
 
     public SearchingByRequestTest() {
         DEFAULT_RESULTS_COUNT = 10;
