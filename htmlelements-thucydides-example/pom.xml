@@ -41,5 +41,56 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/Test*.java</include>
+                        <include>**/When*.java</include>
+                    </includes>
+                    <argLine>-Xmx512m</argLine>
+                    <parallel>classes</parallel>
+                    <systemPropertyVariables>
+                        <webdriver.driver>remote</webdriver.driver>
+                    </systemPropertyVariables>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>net.thucydides.maven.plugins</groupId>
+                <artifactId>maven-thucydides-plugin</artifactId>
+                <version>${thucydides.version}</version>
+                <executions>
+                    <execution>
+                        <id>thucydides-reports</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
