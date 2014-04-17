@@ -11,7 +11,7 @@ HtmlElements jUnit Samples
 <dependency>
     <groupId>ru.yandex.qatools.htmlelements</groupId>
     <artifactId>htmlelements-java</artifactId>
-    <version>1.10</version>
+    <version>1.11</version>
 </dependency>
 ```
 
